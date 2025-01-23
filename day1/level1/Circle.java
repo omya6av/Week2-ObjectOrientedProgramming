@@ -1,6 +1,12 @@
+import java.util.Scanner;
+
 class Circle{
 
     double radius;
+
+    Circle(){
+        radius = 12;
+    }
 
     Circle(double radius){
         this.radius = radius;
@@ -15,7 +21,6 @@ class Circle{
     //circumference of the circle.
     public double circumferenceOfCircle(){
         double areaCircle = 2*Math.PI*radius;
-
         return areaCircle;
     }
 
@@ -28,10 +33,18 @@ class Circle{
 class Main{
     public static void main(String[] args){
 
-        Circle circle1 = new Circle(3);
+        Scanner input = new Scanner(System.in);
 
-        circle1.areaOfCircle();
-        circle1.circumferenceOfCircle();
+        System.out.print("Enter the radius : ");
+        Circle circle1 = new Circle(input.nextDouble());
+
+        // display Area and circumference is circle  using User-defined Radius
+        System.out.println("Area and circumference is circle  using User-defined Radius : ");
         circle1.display();
+
+        // display "Area and circumference is circle by default : "
+        Circle circle2 = new Circle();
+        System.out.println("Area and circumference is circle by default : ");
+         circle2.display();
     }
 }
