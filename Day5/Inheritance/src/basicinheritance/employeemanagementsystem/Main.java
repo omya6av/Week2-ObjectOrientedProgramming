@@ -6,7 +6,7 @@ class Main {
 
         // Creating an Employee object
         Employee employee = new Employee("Purav jha ", 10, 219990 );
-        System.out.println("Details of employee : ");
+        System.out.println("Details of employees : ");
         employee.displayDetails();
         System.out.println();
 

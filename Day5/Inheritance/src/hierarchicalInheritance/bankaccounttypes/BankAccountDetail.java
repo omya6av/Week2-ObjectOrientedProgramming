@@ -1,5 +1,6 @@
 package hierarchicalInheritance.bankaccounttypes;
 
+// main class
 public class BankAccountDetail {
     public static void main(String[] args) {
         BankAccount bankAccount = new BankAccount("12345", 5000);

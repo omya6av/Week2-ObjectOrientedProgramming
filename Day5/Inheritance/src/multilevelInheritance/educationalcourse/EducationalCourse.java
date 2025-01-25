@@ -1,5 +1,6 @@
 package multilevelInheritance.educationalcourse;
 
+// Main class
 public class EducationalCourse {
     public static void main(String[] args) {
         Course course = new Course("Introduction to Java", 30);
