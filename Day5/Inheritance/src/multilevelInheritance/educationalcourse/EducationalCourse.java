@@ -1,9 +1,6 @@
 package multilevelInheritance.educationalcourse;
 
-<<<<<<< HEAD
-// Main class
-=======
->>>>>>> aad29cf0fd1d3a033002a89e8cf3a2515c5374c4
+
 public class EducationalCourse {
     public static void main(String[] args) {
         Course course = new Course("Introduction to Java", 30);
